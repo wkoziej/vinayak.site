@@ -1,0 +1,102 @@
+---
+layout: layouts/base.njk
+title: Contact
+---
+
+<div class="container py-5">
+    <div class="content-container">
+        <h1 class="text-center mb-5">Get in Touch</h1>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="contact-methods">
+                    <h2 class="mb-4">Contact Methods</h2>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <a href="mailto:{{ site.email }}" class="btn btn-outline-primary btn-lg w-100 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-envelope-fill me-2"></i>
+                                Send Email
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="tel:{{ site.phone }}" class="btn btn-outline-success btn-lg w-100 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                Call Now
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://wa.me/919719555519" target="_blank" class="btn btn-outline-success btn-lg w-100 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-outline-primary btn-lg w-100 d-flex align-items-center justify-content-center" id="facebook-link" title="Facebook page link needed">
+                                <i class="bi bi-facebook me-2"></i>
+                                Facebook
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-4">
+                        <h5><i class="bi bi-info-circle me-2"></i>Best Ways to Reach Me</h5>
+                        <ul class="text-start mb-0">
+                            <li><strong>WhatsApp:</strong> For quick questions and appointment booking</li>
+                            <li><strong>Phone:</strong> For urgent consultations</li>
+                            <li><strong>Email:</strong> For detailed inquiries and follow-ups</li>
+                            <li><strong>Facebook:</strong> For updates and community discussions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p><i class="bi bi-envelope me-2"></i><strong>Email:</strong> {{ site.email }}</p>
+                    <p><i class="bi bi-phone me-2"></i><strong>Phone:</strong> {{ site.phone }}</p>
+                    <p><i class="bi bi-geo-alt me-2"></i><strong>Address:</strong> {{ site.address }}</p>
+                </div>
+                
+                <div class="mt-4">
+                    <h4>Professional Associations</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle me-2 text-success"></i>500hrs Certified Yoga Teacher (Yoga Alliance USA)</li>
+                        <li><i class="bi bi-check-circle me-2 text-success"></i>Trained under Dr. Sunil Kumar Joshi</li>
+                        <li><i class="bi bi-check-circle me-2 text-success"></i>Associated with Bhole Baba Ayurvedic Hospital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3>Treatment Locations</h3>
+                <div class="treatment-locations">
+                    <div class="mb-3">
+                        <h5>Primary Practice</h5>
+                        <p class="mb-1">Muzaffarnagar, Uttar Pradesh, India</p>
+                        <small class="text-muted">Home consultations and private treatments</small>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h5>Hospital Affiliation</h5>
+                        <p class="mb-1">Bhole Baba Ayurvedic Hospital</p>
+                        <small class="text-muted">Panchakarma support and Marma therapy</small>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h5>International Consultations</h5>
+                        <p class="mb-1">Online consultations available</p>
+                        <small class="text-muted">Video calls for initial assessment and follow-ups</small>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info mt-4">
+                    <h6><i class="bi bi-info-circle me-2"></i>Treatment Approach</h6>
+                    <p class="mb-0 small">All treatments follow traditional Ayurvedic principles with a holistic approach to physical, mental, and spiritual well-being. Initial consultation recommended to determine the most suitable treatment plan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

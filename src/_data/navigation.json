@@ -1,20 +1,24 @@
 {
   "main": [
     {
-      "text": "Strona główna",
+      "text": "Home",
       "url": "/"
     },
     {
-      "text": "O I to i to",
-      "url": "/o-firmie/"
+      "text": "About Me",
+      "url": "/about/"
     },
     {
-      "text": "Oferta",
-      "url": "/uslugi/"
+      "text": "Services",
+      "url": "/services/"
     },
     {
-      "text": "Kontakt",
-      "url": "/kontakt/"
+      "text": "Panchakarma",
+      "url": "/panchakarma/"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact/"
     }
   ]
 } 

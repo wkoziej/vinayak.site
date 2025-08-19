@@ -1,22 +1,27 @@
 {
-  "name": "I to i to",
-  "description": "Alternatywy się uzupełniają",
-  "url": "https://www.itoito.site",
-  "author": "Wojciech Koziej",
-  "email": "",
-  "phone": "",
-  "address": "Lublin i okolice",
+  "name": "Vinayak Tyagi",
+  "description": "Holistic Services Expert and Yog, Ayurveda, Marma Therapist",
+  "url": "https://vinayak.site",
+  "author": "Vinayak Tyagi",
+  "email": "tyagivinayak15@gmail.com",
+  "phone": "+919719555519",
+  "address": "H no - 115 north Civil Lines, 251001 Muzaffarnagar, India",
   "social": {
-    "masaz": {
-      "facebook": "https://www.facebook.com/profile.php?id=100089584523250"
+    "email": "tyagivinayak15@gmail.com",
+    "phone": "+919719555519"
+  },
+  "services": {
+    "prana_yog": {
+      "title": "Prana Yog & Breathing Awareness",
+      "description": "Deep meditation and breathing techniques for holistic wellness"
     },
-    "muzyka": {
-      "facebook": "https://www.facebook.com/profile.php?id=100090859901306",
-      "youtube": "https://www.youtube.com/channel/UCWczwKKHmBXkMDwEsSOEDHQ",
-      "soundcloud": "https://soundcloud.com/search/sets?q=rz%C4%99polenie%20studio"
+    "marma_therapy": {
+      "title": "Marma Therapy",
+      "description": "Traditional Ayurvedic pressure point therapy for physical and mental healing"
     },
-    "programowanie": {
-      "linkedin": "https://www.linkedin.com/in/wojciech-koziej/"
+    "ayurveda": {
+      "title": "Ayurvedic Consultation",
+      "description": "Holistic health consultancy based on ancient Ayurvedic principles"
     }
   }
 } 

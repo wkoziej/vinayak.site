@@ -1,12 +1,12 @@
 ---
 layout: layouts/base.njk
-title: Strona główna
+title: Home
 ---
 
 <section class="hero text-center py-5">
   <div class="container-fluid px-0">
     <h1 class="display-4">{{ site.name }}</h1>
-    <p class="lead">Alternatywy się uzupełniają</p>
+    <p class="lead">{{ site.description }}</p>
     
   </div>
 </section>
@@ -16,29 +16,29 @@ title: Strona główna
     <section class="py-5">
       <div class="row">
         <div class="col-md-4">
-          <div class="card service-card masaz h-100">
+          <div class="card service-card prana-yog h-100">
             <div class="card-body text-center">
-              <h5 class="card-title">Masaż</h5>
-              <p class="card-text">Współczesny masaż tajski. Terapia punktów marma</p>
-              <a href="/uslugi/#masaz" class="btn btn-sm btn-outline-primary">Dowiedz się więcej</a>
+              <h5 class="card-title">{{ site.services.prana_yog.title }}</h5>
+              <p class="card-text">{{ site.services.prana_yog.description }}</p>
+              <a href="/services/#prana-yog" class="btn btn-sm btn-outline-primary">Learn More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card service-card muzyka h-100">
+          <div class="card service-card marma-therapy h-100">
             <div class="card-body text-center">
-              <h5 class="card-title">Muzyka</h5>
-              <p class="card-text">Warsztaty "samomuzykogrania"</p>
-              <a href="/uslugi/#muzyka" class="btn btn-sm btn-outline-primary">Dowiedz się więcej</a>
+              <h5 class="card-title">{{ site.services.marma_therapy.title }}</h5>
+              <p class="card-text">{{ site.services.marma_therapy.description }}</p>
+              <a href="/services/#marma-therapy" class="btn btn-sm btn-outline-primary">Learn More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card service-card programowanie h-100">
+          <div class="card service-card ayurveda h-100">
             <div class="card-body text-center">
-              <h5 class="card-title">Programowanie</h5>
-              <p class="card-text">Konsultacje w sprawie tworzenia oprogramowania</p>
-              <a href="/uslugi/#programowanie" class="btn btn-sm btn-outline-primary">Dowiedz się więcej</a>
+              <h5 class="card-title">{{ site.services.ayurveda.title }}</h5>
+              <p class="card-text">{{ site.services.ayurveda.description }}</p>
+              <a href="/services/#ayurveda" class="btn btn-sm btn-outline-primary">Learn More</a>
             </div>
           </div>
         </div>

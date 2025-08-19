@@ -1,0 +1,18 @@
+{
+  "name": "itoito.site",
+  "version": "1.0.0",
+  "description": "Strona firmowa I to i to",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": ["eleventy", "11ty", "static-site"],
+  "author": "Wojciech Koziej",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "browser-sync": "^2.29.3"
+  }
+} 

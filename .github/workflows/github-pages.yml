@@ -1,0 +1,69 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          registry-url: 'https://registry.npmjs.org'
+          
+      - name: Clean and prepare npm
+        run: |
+          npm cache clean --force
+          npm config set fetch-retry-maxtimeout 600000
+          npm config set fetch-retries 5
+          npm config set strict-ssl false
+          npm config set legacy-peer-deps true
+          
+      - name: Force manual download of problematic package
+        run: |
+          mkdir -p node_modules/utils-merge
+          curl -L https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz -o utils-merge-1.0.1.tgz
+          tar -xzf utils-merge-1.0.1.tgz -C node_modules/utils-merge --strip-components=1
+          
+      - name: Install dependencies with force option
+        run: npm install --no-audit --no-fund --force
+          
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 

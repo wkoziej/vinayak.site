@@ -1,0 +1,20 @@
+{
+  "main": [
+    {
+      "text": "Strona główna",
+      "url": "/"
+    },
+    {
+      "text": "O I to i to",
+      "url": "/o-firmie/"
+    },
+    {
+      "text": "Oferta",
+      "url": "/uslugi/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "/kontakt/"
+    }
+  ]
+} 

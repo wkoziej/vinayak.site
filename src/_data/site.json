@@ -1,0 +1,22 @@
+{
+  "name": "I to i to",
+  "description": "Alternatywy się uzupełniają",
+  "url": "https://www.itoito.site",
+  "author": "Wojciech Koziej",
+  "email": "",
+  "phone": "",
+  "address": "Lublin i okolice",
+  "social": {
+    "masaz": {
+      "facebook": "https://www.facebook.com/profile.php?id=100089584523250"
+    },
+    "muzyka": {
+      "facebook": "https://www.facebook.com/profile.php?id=100090859901306",
+      "youtube": "https://www.youtube.com/channel/UCWczwKKHmBXkMDwEsSOEDHQ",
+      "soundcloud": "https://soundcloud.com/search/sets?q=rz%C4%99polenie%20studio"
+    },
+    "programowanie": {
+      "linkedin": "https://www.linkedin.com/in/wojciech-koziej/"
+    }
+  }
+} 

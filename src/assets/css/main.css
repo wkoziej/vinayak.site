@@ -82,15 +82,15 @@ body {
 }
 
 .service-card.masaz::before {
-  background-image: url('/vinayak.site/assets/images/masaż.jpg');
+  background-image: url('/assets/images/masaż.jpg');
 }
 
 .service-card.muzyka::before {
-  background-image: url('/vinayak.site/assets/images/muzyka.jpg');
+  background-image: url('/assets/images/muzyka.jpg');
 }
 
 .service-card.programowanie::before {
-  background-image: url('/vinayak.site/assets/images/programowanie.jpg');
+  background-image: url('/assets/images/programowanie.jpg');
 }
 
 .service-card .card-body {

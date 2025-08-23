@@ -1,4 +1,4 @@
-/* Main CSS file for I to i to */
+/* Main CSS file for Vinayak Site */
 
 :root {
   --primary-color: #3498db;
@@ -81,16 +81,20 @@ body {
   opacity: 0.99;
 }
 
-.service-card.masaz::before {
-  background-image: url('/assets/images/masaż.jpg');
+.service-card.prana-yog::before {
+  background-image: url('/assets/images/prana-yog.jpg');
 }
 
-.service-card.muzyka::before {
-  background-image: url('/assets/images/muzyka.jpg');
+.service-card.marma-therapy::before {
+  background-image: url('/assets/images/marma-therapy-image.jpg');
 }
 
-.service-card.programowanie::before {
-  background-image: url('/assets/images/programowanie.jpg');
+.service-card.ayurveda::before {
+  background-image: url('/assets/images/panchakrma-treatment.jpg');
+}
+
+.service-card.himalayan-tour::before {
+  background-image: url('/assets/images/tour.jpg');
 }
 
 .service-card .card-body {

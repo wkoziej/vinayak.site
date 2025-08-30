@@ -22,6 +22,17 @@ module.exports = function(eleventyConfig) {
     return date.toISOString();
   });
   
+  // Add date manipulation filter for calendar
+  eleventyConfig.addFilter("dateAdd", function(dateObj, amount, unit) {
+    const date = new Date(dateObj);
+    if (unit === 'months') {
+      date.setMonth(date.getMonth() + amount);
+    } else if (unit === 'days') {
+      date.setDate(date.getDate() + amount);
+    }
+    return date;
+  });
+  
   // Configuration
   return {
     dir: {

@@ -38,4 +38,4 @@ This is an Eleventy (11ty) static site built for a multi-service business websit
 - Pages are `.njk` files in `src/` root
 - Uses Bootstrap 5.3.2 via CDN with custom CSS overlay
 
-The site serves as a business card for three service areas: massage, music, and programming.
+The site serves as a business card for Ayurvedic Journey, offering authentic Ayurvedic treatments including Prana Yog, Marma Therapy, Panchakarma treatments, and 14-day Himalayan Panchakarma Tours.

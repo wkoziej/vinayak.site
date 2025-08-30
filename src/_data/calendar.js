@@ -4,8 +4,8 @@
 module.exports = {
   // Google Calendar configuration
   // These values should be set via environment variables in production
-  calendarId: process.env.GOOGLE_CALENDAR_ID || '1c8de7e41f6ce53a824e650cc15261a6748161e86b5f0fa2a5b9ad345d328a50@group.calendar.google.com',
-  apiKey: process.env.GOOGLE_CALENDAR_API_KEY || 'AIzaSyC3zG_Xm4t42m7C1B9Ur1bn2UCMvTdBDXY',
+  calendarId: process.env.GOOGLE_CALENDAR_ID || 'YOUR_CALENDAR_ID@group.calendar.google.com',
+  apiKey: process.env.GOOGLE_CALENDAR_API_KEY || 'YOUR_GOOGLE_API_KEY',
   
   // Display configuration
   monthsToShow: 6,

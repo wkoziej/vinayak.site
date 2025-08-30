@@ -32,22 +32,24 @@ GOOGLE_CALENDAR_API_KEY=your-google-api-key
 
 #### GitHub Pages Deployment
 
-Since GitHub Pages only serves static files, the environment variables need to be replaced during the build process:
+🚨 **CRITICAL**: Never commit API keys to public repositories!
 
-1. **GitHub Secrets Setup**:
+1. **GitHub Secrets Setup** (REQUIRED):
    - Go to repository Settings > Secrets and Variables > Actions
    - Add secrets:
-     - `GOOGLE_CALENDAR_ID`: Your calendar ID
-     - `GOOGLE_CALENDAR_API_KEY`: Your Google API key
+     - `GOOGLE_CALENDAR_ID`: Your calendar ID (e.g., `abc123@group.calendar.google.com`)
+     - `GOOGLE_CALENDAR_API_KEY`: Your Google API key (e.g., `AIzaSyC-1234567890abcdef`)
 
-2. **GitHub Actions Workflow** (should be updated):
+2. **GitHub Actions Workflow** (already configured):
    ```yaml
-   - name: Build site
+   - name: Build
      env:
        GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
        GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
      run: npm run build
    ```
+
+   ✅ The workflow file `.github/workflows/github-pages.yml` is already updated with these environment variables.
 
 #### Alternative: Direct Configuration
 

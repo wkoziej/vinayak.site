@@ -5,9 +5,21 @@ module.exports = function(eleventyConfig) {
   // Copy CNAME file for GitHub Pages
   eleventyConfig.addPassthroughCopy("src/CNAME");
   
+  // Copy SEO files
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  
   // Dodanie filtra date
   eleventyConfig.addFilter("year", function() {
     return new Date().getFullYear();
+  });
+  
+  // Add date filter for sitemap
+  eleventyConfig.addFilter("date", function(dateObj, format) {
+    const date = new Date(dateObj);
+    if (format === "%Y-%m-%d") {
+      return date.toISOString().split('T')[0];
+    }
+    return date.toISOString();
   });
   
   // Configuration
@@ -18,9 +30,10 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       data: "_data"
     },
-    templateFormats: ["njk", "md", "html"],
+    templateFormats: ["njk", "md", "html", "xml"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
+    xmlTemplateEngine: "njk",
     pathPrefix: "/"
   };
 }; 

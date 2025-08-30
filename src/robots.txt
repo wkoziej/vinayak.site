@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ayurvedajourney.in/sitemap.xml
+
+# Block common bot traps
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$

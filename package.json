@@ -1,15 +1,15 @@
 {
-  "name": "itoito.site",
+  "name": "ayurvedic-journey",
   "version": "1.0.0",
-  "description": "Strona firmowa I to i to",
+  "description": "Ayurvedic Journey - Holistic healing website with authentic Ayurvedic treatments",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
-  "keywords": ["eleventy", "11ty", "static-site"],
-  "author": "Wojciech Koziej",
+  "keywords": ["eleventy", "11ty", "static-site", "ayurveda", "wellness", "panchakarma"],
+  "author": "Vinayak Tyagi",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

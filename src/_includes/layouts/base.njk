@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - {{ site.name }}</title>
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="keywords" content="ayurveda, panchakarma, marma therapy, prana yog, meditation, holistic healing, wellness, himalayan retreat, traditional medicine">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{ title }} - {{ site.name }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }} - {{ site.name }}">
+    <meta name="twitter:description" content="{{ description or site.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/og-image.jpg">
+    
     <!-- Favicon -->
     <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -28,6 +51,76 @@
       gtag('js', new Date());
 
       gtag('config', 'G-S3NPPQ8B3F');
+    </script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "{{ site.name }}",
+      "description": "{{ site.description }}",
+      "url": "{{ site.url }}",
+      "telephone": "{{ site.phone }}",
+      "email": "{{ site.email }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site.address }}",
+        "addressLocality": "Muzaffarnagar",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "251001",
+        "addressCountry": "IN"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "{{ site.author }}",
+        "email": "{{ site.email }}"
+      },
+      "serviceArea": {
+        "@type": "Place",
+        "name": "India"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Ayurvedic Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{{ site.services.prana_yog.title }}",
+              "description": "{{ site.services.prana_yog.description }}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{{ site.services.marma_therapy.title }}",
+              "description": "{{ site.services.marma_therapy.description }}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{{ site.services.ayurveda.title }}",
+              "description": "{{ site.services.ayurveda.description }}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "{{ site.services.himalayan_tour.title }}",
+              "description": "{{ site.services.himalayan_tour.description }}",
+              "duration": "P14D"
+            }
+          }
+        ]
+      },
+      "sameAs": []
+    }
     </script>
     
     <style>

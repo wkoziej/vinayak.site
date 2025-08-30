@@ -3,10 +3,10 @@
 
 {# Calendar configuration - these values should be provided by the site configuration #}
 {% set calendarConfig = {
-  calendarId: site.calendar.calendarId or 'YOUR_CALENDAR_ID@group.calendar.google.com',
-  apiKey: site.calendar.apiKey or 'YOUR_GOOGLE_API_KEY',
-  containerId: 'availability-calendar',
-  monthsToShow: 6
+  calendarId: calendar.calendarId or 'YOUR_CALENDAR_ID@group.calendar.google.com',
+  apiKey: calendar.apiKey or 'YOUR_GOOGLE_API_KEY',
+  containerId: calendar.containerId or 'availability-calendar',
+  monthsToShow: calendar.monthsToShow or 6
 } %}
 
 {# Calendar section with Bootstrap styling #}
